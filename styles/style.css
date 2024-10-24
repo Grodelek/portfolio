@@ -1,0 +1,94 @@
+html, body {
+    background-color: rgba(40, 42, 54, 1) !important;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    min-height: 100vh;
+}
+.role-ascii{
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre;
+    color: #1793D1;
+    font-size: 11px;
+    overflow: auto;
+    max-height: 200px;
+    line-height: 1.2;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.surname-ascii {
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre;
+    color: #1793D1;
+    font-size: 15px;
+}
+.text-first-section{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+
+}
+.first-section, .second-section {
+    grid-column: 1;
+}
+
+.grid-right {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.myInfo-box {
+    width: 65vh;
+    height: 40vh;
+    border: rgba(255, 255, 255, 0.82) 3px solid;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.myInfo-box-second {
+    width: 65vh;
+    height: 30vh;
+    border: rgba(255, 255, 255, 0.82) 3px solid;
+    border-radius: 2px;
+}
+.second-section{
+    height: 20vh;
+}
+.third-section {
+    width: 100%;
+    height: 100%;
+    border: rgba(255, 255, 255, 0.82) 3px solid;
+    border-radius: 2px;
+}
+.credentials-first {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+}
+.credentials-first:hover{
+    color: white;
+}
+.text-first-section {
+    color: #4a80d8;
+}
+.fa-linkedin{
+    font-size: 30px;
+}
+.fa-linkedin:hover{
+    color: #163d95;
+}
+
