@@ -3,76 +3,67 @@ html, body {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
     font-style: normal;
-    margin: 0;
+    margin: 5px;
     padding: 0;
     height: 100%;
 }
-
 body {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 20px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "first-div center-div"
+        "second-div center-div"
+        "third-div center-div";
+    gap: 20px;
     min-height: 100vh;
 }
-.role-ascii{
-    font-family: 'Courier New', Courier, monospace;
-    white-space: pre;
-    color: #1793D1;
-    font-size: 11px;
-    overflow: auto;
-    max-height: 200px;
-    line-height: 1.2;
-    text-align: left;
-    margin: 0;
-    padding: 0;
+.title-img{
+    display: block;
+    margin: 0 auto;
 }
+.myInfo-box {
+    width: 50vh;
+    height: 13vh;
+    border: rgba(255, 255, 255, 0.82) 3px solid;
+    border-radius: 2px;
+    text-align: center;
+    overflow: auto;
+    word-wrap: break-word;
+    word-break: break-word;
+    box-sizing: border-box;
+}
+.center-box{
+    width: 140vh;
+    height: 100vh;
+    border: rgba(255, 255, 255, 0.82) 3px solid;
+    border-radius: 2px;
+    text-align: center;
+    overflow: auto;
+    word-wrap: break-word;
+    word-break: break-word;
+    box-sizing: border-box;
+}
+.ascii-box {
+    display: flex;                   /* Użycie Flexbox */
+    justify-content: center;         /* Wyśrodkowanie poziome */
+    align-items: center;             /* Wyśrodkowanie pionowe */
+    background-color: rgba(40, 42, 54, 0.8); /* Ustawienie tła */
+    color: #4a80d8;                    /* Kolor tekstu */
+    padding: 20px;                  /* Padding wewnętrzny */
+}
+
 .surname-ascii {
-    font-family: 'Courier New', Courier, monospace;
-    white-space: pre;
-    color: #1793D1;
-    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace; /* Ustawienie czcionki monospace */
+    white-space: pre-wrap;          /* Umożliwia łamanie tekstu */
+    text-align: center;             /* Wyśrodkowanie tekstu */
+    font-size: 14px;                /* Ustawienie rozmiaru czcionki */
 }
 .text-first-section{
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 10px;
 
-}
-.first-section, .second-section {
-    grid-column: 1;
-}
-
-.grid-right {
-    grid-column: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-}
-
-.myInfo-box {
-    width: 65vh;
-    height: 40vh;
-    border: rgba(255, 255, 255, 0.82) 3px solid;
-    border-radius: 2px;
-    text-align: center;
-}
-
-.myInfo-box-second {
-    width: 65vh;
-    height: 30vh;
-    border: rgba(255, 255, 255, 0.82) 3px solid;
-    border-radius: 2px;
-}
-.second-section{
-    height: 20vh;
-}
-.third-section {
-    width: 100%;
-    height: 100%;
-    border: rgba(255, 255, 255, 0.82) 3px solid;
-    border-radius: 2px;
 }
 .credentials-first {
     margin-bottom: 10px;
@@ -91,4 +82,97 @@ body {
 .fa-linkedin:hover{
     color: #163d95;
 }
+.first-div{
+    justify-content: center;
+}
+.projects-box{
+    width: 50vh;
+    height: 30vh;
+    border: rgba(255, 255, 255, 0.82) 3px solid;
+    border-radius: 2px;
+    text-align: center;
+    overflow: auto;
+    word-wrap: break-word;
+    word-break: break-word;
+    box-sizing: border-box;
+}
+.first-div {
+    grid-area: first-div;
+}
 
+.center-div {
+    grid-area: center-div;
+}
+
+.second-div {
+    grid-area: second-div;
+}
+.third-div{
+    grid-area: third-div;
+}
+.projects-p {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #4a80d8;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    text-decoration: none;
+}
+
+.projects-p:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.credentials-first {
+    margin-bottom: 10px;
+}
+.tech-box {
+    width: 50vh;
+    height: 50vh;
+    border: rgba(255, 255, 255, 0.82) 3px solid;
+    border-radius: 2px;
+    text-align: center;
+    overflow: auto;
+    word-wrap: break-word;
+    word-break: break-word;
+    box-sizing: border-box;
+}
+
+.tech-p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.tech-p:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.tech-box i {
+    margin-right: 10px;
+    color: #4a80d8;
+    font-size: 20px;
+}
+.credentials-first2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 300px;
+    transition: transform 0.3s;
+    color: white
+}
+.credentials-first2:hover {
+    transform: scale(1.1);
+}
+.social-icon {
+    margin-right: 10px;
+}
+.social-icon {
+    background: none;
+    text-decoration: none;
+}
+.fa-github{
+    font-size: 25px;
+}
