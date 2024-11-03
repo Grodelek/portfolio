@@ -45,37 +45,34 @@ body {
     box-sizing: border-box;
 }
 .ascii-box {
-    display: flex;                   /* Użycie Flexbox */
-    justify-content: center;         /* Wyśrodkowanie poziome */
-    align-items: center;             /* Wyśrodkowanie pionowe */
-    background-color: rgba(40, 42, 54, 0.8); /* Ustawienie tła */
-    color: #4a80d8;                    /* Kolor tekstu */
-    padding: 20px;                  /* Padding wewnętrzny */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(40, 42, 54, 0.8);
+    color: #4a80d8;
+    padding: 20px;
 }
 
 .surname-ascii {
-    font-family: 'Courier New', Courier, monospace; /* Ustawienie czcionki monospace */
-    white-space: pre-wrap;          /* Umożliwia łamanie tekstu */
-    text-align: center;             /* Wyśrodkowanie tekstu */
-    font-size: 14px;                /* Ustawienie rozmiaru czcionki */
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    text-align: center;
+    font-size: 14px;
 }
 .text-first-section{
-    color: white;
+    color: #4a80d8;
     font-family: 'Courier New', Courier, monospace;
     font-size: 10px;
-
 }
-.credentials-first {
+.credentials-first, .credentials-first-no-hover{
     margin-bottom: 10px;
-    color: white;
+    color: #4a80d8;
     font-size: 18px;
 }
 .credentials-first:hover{
     color: white;
 }
-.text-first-section {
-    color: #4a80d8;
-}
+
 .fa-linkedin{
     font-size: 30px;
 }
@@ -175,4 +172,22 @@ body {
 }
 .fa-github{
     font-size: 25px;
+}
+.orange {
+    color: #FFA500;
+}
+.orange:hover{
+    color: white;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.project1-photo{
+    width: 100%;
+    height: auto;
+    margin-top: 30vh;
+    margin-bottom: 10vh;
 }

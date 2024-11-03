@@ -17,11 +17,10 @@
 
 <div class="first-div">
     <div class="myInfo-box">
-        <img  class="title-img" src="https://readme-typing-svg.demolab.com?font=Pixelify+Sans&size=35&pause=1000&color=1793D1&repeat=false&width=435&lines=Software+Engineer" alt="Typing SVG" /></a>
-        <p class="credentials-first text-first-section">Hi I'm Artur!<br> I am Backend Software Engineer from Poland 🇵🇱</p>
+        <a href="#" class="credentials-first text-first-section" style="text-decoration: none; padding-top: 10px; display: inline-block;" onclick="resetContent()">Hi I'm Artur!<br> I am Backend Software Engineer from Poland 🇵🇱</a>
     </div>
 </div>
-<div class="center-div">
+<div class="center-div" id="center-div">
     <div class="center-box">
         <div class="ascii-box">
             <p class="surname-ascii">
@@ -52,7 +51,7 @@
 <div class="second-div">
     <div class="projects-box">
         <p class="credentials-first2">Projects</p>
-        <a class="projects-p credentials-first text-first-section" href="https://github.com/Grodelek/Spring-e-commerce">E-leaf, Spring E-commerce Website</a>
+        <a class="projects-p credentials-first text-first-section" href="#" onclick="changeContentFirstProject();">E-leaf, Spring E-commerce Website</a>
         <br>
         <a class="projects-p credentials-first text-first-section" href="https://github.com/Grodelek/Symfony_Flashcards">Symfony Flashcards</a>
         <br>
@@ -74,6 +73,9 @@
             <i class="fa-solid fa-cube"></i> Hibernate
         </p>
         <p class="tech-p credentials-first text-first-section text-white">
+            <i class="fa-brands fa-git-alt"></i> Git
+        </p>
+        <p class="tech-p credentials-first text-first-section text-white">
             <i class="fa-brands fa-php"></i> Php
         </p>
         <p class="tech-p credentials-first text-first-section text-white">
@@ -91,6 +93,66 @@
     </div>
 </div>
 
-    
+<script>
+    function changeContentFirstProject() {
+        const centerDiv = document.getElementById('center-div');
+        centerDiv.innerHTML = `
+            <div class="center-box">
+    <div class="ascii-box">
+        <h1>Project Details</h1>
+    </div>
+    <h2 class="orange">E-leaf</h2>
+    <p class="credentials-first-no-hover text-first-section">
+        <span class="orange">The Spring E-commerce project</span> is a web application built with the
+        <span class="orange">Spring framework</span> for online shopping. It features user authentication, product listings,
+        product filters, and a shopping cart system. The project utilizes
+        <span class="orange">Hibernate</span> for relational mapping,
+        <span class="orange">Thymeleaf</span> as the template engine, and connects to a
+        <span class="orange">MySQL</span> database for data storage. Technologies used include
+        <span class="orange">Java</span>,
+        <span class="orange">HTML</span>, and
+        <span class="orange">CSS</span>, adhering to the best software development practices.
+    </p>
+    <a href="https://github.com/Grodelek/Spring-e-commerce" class="credentials-first text-first-section orange" style="text-decoration: none;">GitHub Project link</a>
+    <div class="container">
+        <img class="project1-photo" src="proj1.png" alt="Project 1 image">
+    </div>
+</div>
+        `;
+    }
+
+    function resetContent() {
+        const centerDiv = document.getElementById('center-div');
+        centerDiv.innerHTML = `
+            <div class="center-box">
+                <div class="ascii-box">
+                       <p class="surname-ascii">
+                _              _           _            _            _            _
+                /\\ \\           /\\ \\        /\\ \\         /\\ \\         /\\ \\         _\\ \\
+                /  \\ \\         /  \\ \\      /  \\ \\       /  \\ \\____   /  \\ \\       /\\__ \\
+                / /\\ \\_\\       / /\\ \\ \\    / /\\ \\ \\     / /\\ \\_____\\ / /\\ \\ \\     / /_ \\_\\
+                / / /\\/_/      / / /\\ \\_\\  / / /\\ \\ \\   / / /\\/___  // / /\\ \\_\\   / / /\\/_
+                / / / ______   / / /_/ / / / / /  \\ \\_\\ / / /   / / // /_/_ \\/_/  / / /
+                / / / /\\_____\\ / / /__\\/ / / / /   / / // / /   / / // /____/\\    / / /
+                / / /  \\/____ // / /_____/ / / /   / / // / /   / / // /\\____\\/   / / / ____
+                / / /_____/ / // / /\\ \\ \\  / / /___/ / / \\ \\ \\__/ / // / /______  / /_/_/ ___/\\
+                / / /______\\/ // / /  \\ \\ \\/ / /____\\/ /   \\ \\___\\/ // / /_______\\/_______/\\__\\/
+                \\/___________/ \\/_/    \\_\\/\\/_________/     \\/_____/ \\/__________/\\_______\\/
+            </p>
+                </div>
+                <p class="credentials-first text-first-section">Artur Grodel</p>
+                <p class="credentials-first text-first-section">Third year Computer Science Student</p>
+                <p class="credentials-first text-first-section"><i class="fa-duotone fa-solid fa-location-dot"></i> Elbląg, Poland</p>
+                <a class="social-icon" href="https://www.linkedin.com/in/artur-grodel-91aabb279/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a class="social-icon" href="https://github.com/Grodelek" target="_blank">
+                    <i class="fa-brands fa-github text-white"></i>
+                </a>
+            </div>
+        `;
+    }
+</script>
+
 </body>
 </html>
