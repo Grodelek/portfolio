@@ -188,6 +188,5 @@ body {
 .project1-photo{
     width: 100%;
     height: auto;
-    margin-top: 30vh;
-    margin-bottom: 10vh;
+    margin: 30vh 10vh 10vh;
 }
